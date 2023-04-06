@@ -1,0 +1,314 @@
+*{
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Caveat&family=Hurricane&family=Palette+Mosaic&family=Smokum&display=swap');
+
+body {
+max-width: 480px;
+min-width: 320px;
+margin: 0 auto;
+background-color: aliceblue;
+}
+
+.joinus {
+background-color: dodgerblue;
+color: white;
+border-radius: 48px;
+padding: 12px;
+margin: 12px auto;
+width: 90%;
+text-align: center;
+font-weight: bold;
+cursor: pointer;
+}
+
+.joinus sup {
+font-size: xx-small;
+font-weight: normal;
+}
+
+.joinus:hover,
+.joinus:active {
+background-color: black;
+}
+
+.most {
+margin: 16px auto 0 auto;
+width: 95%;
+background-color: black;
+color: white;
+padding: 4px;
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+}
+
+.most .header {
+margin: 4px auto;
+padding: 4px;
+font-weight: bold;
+font-family: 'Acme', cursive;
+}
+
+.most .title {
+font-size: large;
+text-transform: uppercase;
+}
+
+.most span {
+display: block;
+}
+
+.most .list-group {
+height: 320px;
+overflow: scroll;
+font-weight: bold;
+}
+
+.most .list-group li {
+color: brown;
+}
+
+.most .list-group li .badge {
+background-color: dodgerblue !important;
+}
+
+.most .list-group li:hover,
+.most .list-group li:active {
+color: gray;
+cursor: pointer;
+}
+
+.latest {
+margin: 24px auto auto auto;
+width: 95%;
+}
+
+.latest .title {
+display: block;
+font-family: 'Acme', cursive;
+margin-bottom: 8px;
+padding: 12px;
+font-weight: bold;
+font-size: larger;
+background-color: black;
+color: white;
+}
+
+.drama-cont {
+background-color: black;
+display: flex;
+flex-direction: column;
+}
+
+.latest .drama {
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+
+color: white;
+padding: 12px 0;
+border-radius: 4px;
+}
+
+.latest .drama .img {
+width: 160px;
+height: 230px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: aliceblue;
+margin: 4px;
+border-radius: 4px;
+cursor: pointer;
+}
+
+.latest .drama .img:active,
+.latest .drama .img:hover {
+box-shadow: 4px 4px 4px brown, -4px -4px 4px brown;
+width: 164px;
+height: 234px;
+}
+
+.latest .drama .img h3 {
+font-size: 12px;
+color: brown;
+font-family: 'Acme', cursive;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+width: 90%;
+margin: 8px auto 0 auto;
+text-align: center;
+}
+
+.latest .drama img {
+width: 150px;
+height: 200px;
+}
+
+.latest .drama .img h3:hover,
+.latest .drama .img h3:active {
+color: brown;
+}
+
+.latest .btn {
+text-align: center;
+margin: 12px auto;
+width: 100%;
+}
+
+.latest .btn a {
+font-size: x-large;
+color: brown;
+font-weight: bold;
+border: none;
+border-radius: 4px;
+font-family: 'Acme', cursive;
+padding: 12px;
+width: 88%;
+background-color: #f5f5f5;
+display: inline-block;
+}
+
+.latest a,
+.yracc a {
+text-decoration: none;
+}
+
+.indexed {
+background-color: black;
+width: 95%;
+margin: 4px auto;
+color: white;
+font-family: 'Acme', 'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: large;
+padding: 8px 4px;
+}
+
+.yracc {
+width: 95%;
+margin: 4px auto;
+padding: 4px;
+background-color: black;
+}
+
+.yracc .accordion {
+margin: 0 auto;
+}
+
+.yracc .accordion .accordion-button {
+background-color: brown !important;
+color: #ffffff;
+font-weight: bold;
+font-family: 'Acme', 'Times New Roman', Times, serif;
+}
+
+.accordion-button.collapsed::after {
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.yracc .accordion .list-group {
+height: 240px;
+overflow-y: scroll;
+}
+
+.yracc .accordion .list-group li {
+color: brown;
+cursor: pointer;
+font-weight: bold;
+}
+
+footer {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: lightgray;
+color: gray;
+font-family: 'Acme', sans-serif;
+padding: 16px 4px;
+}
+
+footer span {
+margin-top: 12px;
+font-weight: bold;
+}
+
+footer .a {
+text-decoration: underline;
+color: gray;
+cursor: pointer;
+}
+
+@media (min-width: 480px) {
+.latest .drama .img {
+width: 180px;
+height: 270px;
+}
+
+.latest .drama .img:active,
+.latest .drama .img:hover {
+box-shadow: 4px 4px 4px brown, -4px -4px 4px brown;
+width: 184px;
+height: 274px;
+}
+
+.latest .drama img {
+width: 174px;
+height: 240px;
+}
+}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Acme&family=Caveat&family=Hurricane&family=Palette+Mosaic&family=Smokum&display=swap');
+
+
+.navbar {
+background-color: black;
+color: white;
+}
+
+.navbar a {
+text-decoration: none;
+color: Black;
+}
+
+.navbar-brand {
+font-weight: bold;
+font-size: large;
+font-family: 'Bodoni', cursive;
+border-radius: 4px;
+padding: 12px;
+border-radius: 14px;
+border: solid lightgray 1px;
+}
+
+.navbar-brand span {
+font-size: small;
+display: block;
+font-family: 'Verdana', cursive;
+}
+
+.navbar ul {
+margin-top: 16px;
+}
+
+.navbar .nav-item {
+font-weight: bold;
+padding-left: 12px;
+color: brown;
+display: block;
+margin-top: 8px;
+cursor: pointer;
+}
+
+.navbar form input {
+width: 75%;
+margin: 16px auto;
+}
+
+.navbar .navbar-toggler {
+border: 1px lightgray solid;
+}
